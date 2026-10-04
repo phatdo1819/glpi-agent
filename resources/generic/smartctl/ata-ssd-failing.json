@@ -1,0 +1,124 @@
+{
+  "json_format_version": [
+    1,
+    0
+  ],
+  "smartctl": {
+    "version": [
+      7,
+      4
+    ],
+    "svn_revision": "5530",
+    "platform_info": "x86_64-linux-6.8.0",
+    "build_info": "(local build)",
+    "argv": [
+      "smartctl",
+      "-x",
+      "-j",
+      "/dev/sda"
+    ],
+    "exit_status": 8
+  },
+  "local_time": {
+    "time_t": 1790000000,
+    "asctime": "Sat Sep 21 12:00:00 2026 UTC"
+  },
+  "device": {
+    "name": "/dev/sda",
+    "info_name": "/dev/sda [SAT]",
+    "type": "sat",
+    "protocol": "ATA"
+  },
+  "model_family": "Phison Driven SSDs",
+  "model_name": "KINGSTON SA400S37240G",
+  "serial_number": "50026B7782ABCDEF",
+  "firmware_version": "FW01",
+  "user_capacity": {
+    "blocks": 976773168,
+    "bytes": 500107862016
+  },
+  "logical_block_size": 512,
+  "physical_block_size": 512,
+  "rotation_rate": 0,
+  "smart_support": {
+    "available": true,
+    "enabled": true
+  },
+  "smart_status": {
+    "passed": false
+  },
+  "ata_smart_attributes": {
+    "revision": 1,
+    "table": [
+      {
+        "id": 5,
+        "name": "Reallocated_Sector_Ct",
+        "value": 5,
+        "worst": 5,
+        "thresh": 10,
+        "when_failed": "now",
+        "flags": {
+          "value": 51,
+          "string": "-O--CK ",
+          "prefailure": false,
+          "updated_online": true,
+          "performance": false,
+          "error_rate": false,
+          "event_count": true,
+          "auto_keep": true
+        },
+        "raw": {
+          "value": 2000,
+          "string": "2000"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Power_On_Hours",
+        "value": 100,
+        "worst": 100,
+        "thresh": 0,
+        "when_failed": "",
+        "flags": {
+          "value": 50,
+          "string": "-O--CK ",
+          "prefailure": false,
+          "updated_online": true,
+          "performance": false,
+          "error_rate": false,
+          "event_count": true,
+          "auto_keep": true
+        },
+        "raw": {
+          "value": 22000,
+          "string": "22000"
+        }
+      },
+      {
+        "id": 231,
+        "name": "SSD_Life_Left",
+        "value": 60,
+        "worst": 60,
+        "thresh": 0,
+        "when_failed": "",
+        "flags": {
+          "value": 51,
+          "string": "-O--CK ",
+          "prefailure": false,
+          "updated_online": true,
+          "performance": false,
+          "error_rate": false,
+          "event_count": true,
+          "auto_keep": true
+        },
+        "raw": {
+          "value": 60,
+          "string": "60"
+        }
+      }
+    ]
+  },
+  "power_on_time": {
+    "hours": 22000
+  }
+}

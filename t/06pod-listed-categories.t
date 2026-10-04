@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# Modified 2026-10-04 by phatdo1819: count the storage_health inventory category
 
 use strict;
 use warnings;
@@ -9,7 +10,7 @@ use English qw(-no_match_vars);
 
 use GLPI::Agent::Tools;
 
-use constant    LISTED_CATEGORY_COUNT   => 37;
+use constant    LISTED_CATEGORY_COUNT   => 38;
 
 plan(skip_all => 'Author test, set $ENV{TEST_AUTHOR} to a true value to run')
     if !$ENV{TEST_AUTHOR};

@@ -1,5 +1,6 @@
 package
     PerlBuildJob;
+# Modified 2026-10-04 by phatdo1819: bundle smartctl 7.5 for the SmartHealth inventory module
 
 use parent 'Exporter';
 
@@ -256,6 +257,10 @@ sub build_job {
                 { do=>'copyfile', args=>[ 'contrib/windows/packaging/tools/x86/hdparm.exe', '<image_dir>/perl/bin' ] },
                 { do=>'copyfile', args=>[ 'contrib/windows/packaging/tools/'.$arch.'/7z.exe', '<image_dir>/perl/bin' ] },
                 { do=>'copyfile', args=>[ 'contrib/windows/packaging/tools/'.$arch.'/7z.dll', '<image_dir>/perl/bin' ] },
+                # smartctl from smartmontools 7.5, with its drive database read from the same folder
+                { do=>'copyfile', args=>[ 'contrib/windows/packaging/tools/'.$arch.'/smartctl.exe', '<image_dir>/perl/bin' ] },
+                { do=>'copyfile', args=>[ 'contrib/windows/packaging/tools/drivedb.h', '<image_dir>/perl/bin' ] },
+                { do=>'copyfile', args=>[ 'contrib/windows/packaging/tools/smartmontools-COPYING.txt', '<image_dir>/perl/bin' ] },
             ],
         },
         ### NEXT STEP 12 Installation with direct github download ##############

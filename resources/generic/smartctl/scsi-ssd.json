@@ -1,0 +1,46 @@
+{
+  "json_format_version": [
+    1,
+    0
+  ],
+  "smartctl": {
+    "version": [
+      7,
+      3
+    ],
+    "svn_revision": "5530",
+    "platform_info": "x86_64-linux-6.8.0",
+    "build_info": "(local build)",
+    "argv": [
+      "smartctl",
+      "-x",
+      "-j",
+      "/dev/sda"
+    ],
+    "exit_status": 0
+  },
+  "device": {
+    "name": "/dev/sde",
+    "info_name": "/dev/sde",
+    "type": "scsi",
+    "protocol": "SCSI"
+  },
+  "scsi_vendor": "SEAGATE",
+  "scsi_product": "XS1600LE70004",
+  "scsi_model_name": "SEAGATE XS1600LE70004",
+  "serial_number": "HLJ0A12B",
+  "user_capacity": {
+    "blocks": 3125627568,
+    "bytes": 1600321314816
+  },
+  "smart_status": {
+    "passed": true
+  },
+  "temperature": {
+    "current": 30
+  },
+  "power_on_time": {
+    "hours": 20000
+  },
+  "scsi_percentage_used_endurance_indicator": 12
+}

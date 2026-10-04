@@ -1,4 +1,5 @@
 package GLPI::Agent::Inventory;
+# Modified 2026-10-04 by phatdo1819: accept SMART_* STORAGES fields for the SmartHealth inventory module
 
 use strict;
 use warnings;
@@ -95,7 +96,13 @@ my %fields = (
     STORAGES         => [ qw/DESCRIPTION DISKSIZE INTERFACE MANUFACTURER MODEL
                             NAME TYPE SERIAL SERIALNUMBER FIRMWARE SCSI_COID
                             SCSI_CHID SCSI_UNID SCSI_LUN WWN
-                            ENCRYPT_NAME ENCRYPT_ALGO ENCRYPT_STATUS ENCRYPT_TYPE/ ],
+                            ENCRYPT_NAME ENCRYPT_ALGO ENCRYPT_STATUS ENCRYPT_TYPE
+                            SMART_HEALTH SMART_HEALTH_SOURCE SMART_STATUS
+                            SMART_TYPE SMART_POWER_ON_HOURS SMART_TEMPERATURE
+                            SMART_WRITTEN SMART_CRITICAL_WARNING
+                            SMART_MEDIA_ERRORS SMART_REALLOCATED_SECTORS
+                            SMART_PENDING_SECTORS SMART_UNCORRECTABLE_SECTORS
+                            SMART_FAILING_ATTRIBUTES/ ],
     VIDEOS           => [ qw/CHIPSET MEMORY NAME RESOLUTION PCISLOT PCIID/ ],
     USBDEVICES       => [ qw/VENDORID PRODUCTID MANUFACTURER CAPTION SERIAL
                             CLASS SUBCLASS NAME/ ],

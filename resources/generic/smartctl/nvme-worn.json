@@ -1,0 +1,71 @@
+{
+  "json_format_version": [
+    1,
+    0
+  ],
+  "smartctl": {
+    "version": [
+      7,
+      4
+    ],
+    "svn_revision": "5530",
+    "platform_info": "x86_64-linux-6.8.0",
+    "build_info": "(local build)",
+    "argv": [
+      "smartctl",
+      "-x",
+      "-j",
+      "/dev/sda"
+    ],
+    "exit_status": 8
+  },
+  "device": {
+    "name": "/dev/nvme0",
+    "info_name": "/dev/nvme0",
+    "type": "nvme",
+    "protocol": "NVMe"
+  },
+  "model_name": "Samsung SSD 970 EVO Plus 1TB",
+  "serial_number": "S4EWNX0R654321B",
+  "firmware_version": "2B2QEXM7",
+  "nvme_total_capacity": 1000204886016,
+  "user_capacity": {
+    "blocks": 1953525168,
+    "bytes": 1000204886016
+  },
+  "smart_support": {
+    "available": true,
+    "enabled": true
+  },
+  "smart_status": {
+    "passed": false,
+    "nvme": {
+      "value": 4,
+      "reliability_degraded": true
+    }
+  },
+  "nvme_smart_health_information_log": {
+    "critical_warning": 4,
+    "temperature": 45,
+    "available_spare": 100,
+    "available_spare_threshold": 10,
+    "percentage_used": 120,
+    "data_units_read": 210000000,
+    "data_units_written": 300000000,
+    "host_reads": 2500000000,
+    "host_writes": 3100000000,
+    "controller_busy_time": 9000,
+    "power_cycles": 2100,
+    "power_on_hours": 30000,
+    "unsafe_shutdowns": 80,
+    "media_errors": 3,
+    "num_err_log_entries": 120
+  },
+  "temperature": {
+    "current": 45
+  },
+  "power_cycle_count": 2100,
+  "power_on_time": {
+    "hours": 30000
+  }
+}

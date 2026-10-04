@@ -1,0 +1,48 @@
+{
+  "json_format_version": [
+    1,
+    0
+  ],
+  "smartctl": {
+    "version": [
+      7,
+      4
+    ],
+    "svn_revision": "5530",
+    "platform_info": "x86_64-linux-6.8.0",
+    "build_info": "(local build)",
+    "argv": [
+      "smartctl",
+      "-x",
+      "-j",
+      "/dev/sda"
+    ],
+    "exit_status": 0
+  },
+  "devices": [
+    {
+      "name": "/dev/sda",
+      "info_name": "/dev/sda [SAT]",
+      "type": "sat",
+      "protocol": "ATA"
+    },
+    {
+      "name": "/dev/nvme0",
+      "info_name": "/dev/nvme0",
+      "type": "nvme",
+      "protocol": "NVMe"
+    },
+    {
+      "name": "/dev/bus/0",
+      "info_name": "/dev/bus/0 [megaraid_disk_00] [SAT]",
+      "type": "sat+megaraid,0",
+      "protocol": "ATA"
+    },
+    {
+      "name": "/dev/sdz; reboot",
+      "info_name": "bogus",
+      "type": "sat",
+      "protocol": "ATA"
+    }
+  ]
+}

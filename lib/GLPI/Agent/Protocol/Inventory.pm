@@ -1,4 +1,5 @@
 package GLPI::Agent::Protocol::Inventory;
+# Modified 2026-10-04 by phatdo1819: normalize SMART_* STORAGES fields for the SmartHealth inventory module
 
 use strict;
 use warnings;
@@ -128,8 +129,12 @@ my %normalize = (
         string          => [ qw/VERSION_MAJOR VERSION_MINOR/ ],
     },
     STORAGES         => {
-        integer         => [ qw/DISKSIZE/ ],
-        uppercase       => [ qw/INTERFACE/ ],
+        integer         => [ qw/DISKSIZE SMART_HEALTH SMART_POWER_ON_HOURS
+                                SMART_TEMPERATURE SMART_WRITTEN
+                                SMART_CRITICAL_WARNING SMART_MEDIA_ERRORS
+                                SMART_REALLOCATED_SECTORS SMART_PENDING_SECTORS
+                                SMART_UNCORRECTABLE_SECTORS/ ],
+        uppercase       => [ qw/INTERFACE SMART_STATUS SMART_TYPE/ ],
     },
     VIDEOS           => {
         integer         => [ qw/MEMORY/ ],
