@@ -102,7 +102,7 @@ my %fields = (
                             SMART_WRITTEN SMART_CRITICAL_WARNING
                             SMART_MEDIA_ERRORS SMART_REALLOCATED_SECTORS
                             SMART_PENDING_SECTORS SMART_UNCORRECTABLE_SECTORS
-                            SMART_FAILING_ATTRIBUTES/ ],
+                            SMART_FAILING_ATTRIBUTES SMART_VOLUMES/ ],
     VIDEOS           => [ qw/CHIPSET MEMORY NAME RESOLUTION PCISLOT PCIID/ ],
     USBDEVICES       => [ qw/VENDORID PRODUCTID MANUFACTURER CAPTION SERIAL
                             CLASS SUBCLASS NAME/ ],

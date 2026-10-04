@@ -1,0 +1,75 @@
+{
+   "blockdevices": [
+      {
+         "name": "nvme0n1",
+         "mountpoint": null,
+         "label": null,
+         "children": [
+            {
+               "name": "nvme0n1p1",
+               "mountpoint": "/boot/efi",
+               "label": null
+            },{
+               "name": "nvme0n1p2",
+               "mountpoint": "/boot",
+               "label": null
+            },{
+               "name": "nvme0n1p3",
+               "mountpoint": null,
+               "label": null,
+               "children": [
+                  {
+                     "name": "nvme0n1p3_crypt",
+                     "mountpoint": null,
+                     "label": null,
+                     "children": [
+                        {
+                           "name": "vg0-root",
+                           "mountpoint": "/",
+                           "label": null
+                        },{
+                           "name": "vg0-swap",
+                           "mountpoint": "[SWAP]",
+                           "label": null
+                        },{
+                           "name": "vg0-home",
+                           "mountpoint": "/home",
+                           "label": "home"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },{
+         "name": "sda",
+         "mountpoint": null,
+         "label": null,
+         "children": [
+            {
+               "name": "sda1",
+               "mountpoint": null,
+               "label": null,
+               "children": [
+                  {
+                     "name": "vg1-data",
+                     "mountpoint": "/srv/data",
+                     "label": "data"
+                  }
+               ]
+            },{
+               "name": "sda2",
+               "mountpoint": null,
+               "label": null,
+               "children": [
+                  {
+                     "name": "vg1-data",
+                     "mountpoint": "/srv/data",
+                     "label": "data"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,49 @@
+{
+   "blockdevices": [
+      {
+         "name": "loop0",
+         "mountpoint": "/snap/core22/1380",
+         "label": null
+      },{
+         "name": "sda",
+         "mountpoint": null,
+         "label": null,
+         "children": [
+            {
+               "name": "sda1",
+               "mountpoint": null,
+               "label": "server:0",
+               "children": [
+                  {
+                     "name": "md0",
+                     "mountpoint": "/data",
+                     "label": "DATA"
+                  }
+               ]
+            }
+         ]
+      },{
+         "name": "sdb",
+         "mountpoint": null,
+         "label": null,
+         "children": [
+            {
+               "name": "sdb1",
+               "mountpoint": null,
+               "label": "server:0",
+               "children": [
+                  {
+                     "name": "md0",
+                     "mountpoint": "/data",
+                     "label": "DATA"
+                  }
+               ]
+            }
+         ]
+      },{
+         "name": "sdc",
+         "mountpoint": null,
+         "label": null
+      }
+   ]
+}

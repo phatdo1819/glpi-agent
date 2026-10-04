@@ -1,0 +1,32 @@
+{
+   "blockdevices": [
+      {
+         "name": "sr0",
+         "mountpoint": null,
+         "label": "Debian 13.5.0 arm64 1"
+      },{
+         "name": "nvme0n1",
+         "mountpoint": null,
+         "label": null,
+         "children": [
+            {
+               "name": "nvme0n1p1",
+               "mountpoint": null,
+               "label": null
+            },{
+               "name": "nvme0n1p2",
+               "mountpoint": "/boot/efi",
+               "label": null
+            },{
+               "name": "nvme0n1p3",
+               "mountpoint": "/",
+               "label": null
+            },{
+               "name": "nvme0n1p4",
+               "mountpoint": "[SWAP]",
+               "label": null
+            }
+         ]
+      }
+   ]
+}
